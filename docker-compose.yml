@@ -21,7 +21,7 @@ services:
     depends_on:
       - database
     ports:
-      - "9090:9090"
+      - "9191:9191"
     networks:
       - spring-boot-with-docker_default
       - frontendNetwork
