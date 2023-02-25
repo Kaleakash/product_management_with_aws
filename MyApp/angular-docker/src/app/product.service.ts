@@ -7,7 +7,7 @@ import { Product } from './product';
   providedIn: 'root'
 })
 export class ProductService {
-  baseUrl:string ="http://localhost:9292/products"
+  baseUrl:string ="http://100.25.180.125:9292/products"
   constructor(public http:HttpClient) { }
 
   loadAllProducts():Observable<Product[]> {
