@@ -7,7 +7,7 @@ import {IpAddress} from './IpAddress';
   providedIn: 'root'
 })
 export class ProductService {
-  baseUrl:string =`http://${IpAddress}:9292/products`
+  baseUrl:string =`http://100.27.15.216:9292/products`
   constructor(public http:HttpClient) { }
 
   loadAllProducts():Observable<Product[]> {

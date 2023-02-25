@@ -1,0 +1,25 @@
+update ec2 instance 
+
+sudo yum -y update
+
+Git install 
+
+sudo yum install git -y
+
+
+install Docker 
+
+sudo yum -y install docker
+
+sudo service docker start
+
+sudo usermod -aG docker ec2-user 
+
+install Docker compose
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+sudo chmod +x /usr/local/bin/docker-compose
+
+then reboot connect few minutes 
+sudo reboot
