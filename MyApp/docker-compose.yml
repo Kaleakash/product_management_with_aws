@@ -1,5 +1,6 @@
 version: "3.7"
 services:
+
   database:
     image: mysql:8
     container_name: database
@@ -13,6 +14,7 @@ services:
     networks:
       - backend
     restart: always
+
   spring-boot-app:
     build:
       context: ./spring-boot-with-docker/

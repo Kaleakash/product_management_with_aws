@@ -2,12 +2,12 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Product } from './product';
-
+import {IpAddress} from './IpAddress';
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
-  baseUrl:string ="http://100.25.180.125:9292/products"
+  baseUrl:string =`http://${IpAddress}:9292/products`
   constructor(public http:HttpClient) { }
 
   loadAllProducts():Observable<Product[]> {
